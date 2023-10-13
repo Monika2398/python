@@ -1,10 +1,9 @@
-1) Total surface area of a cuboid
+#1) Total surface area of a cuboid
      # it has 6 sides
-     Front and back = 2l*h
-     bottom and top = 2l*b
-     left and right = 2b*h
-     total = 2(lh+lb+bh)
-ans:
+  #   Front and back = 2l*h
+ #    bottom and top = 2l*b
+#     total = 2(lh+lb+bh)
+#ans:
 print("Area of a cuboid")
 l = int(input("Enter the length:"))
 b = int(input("Enter the breadth:"))
@@ -12,6 +11,10 @@ h = int(input("Enter the height:"))
 Total = 2*(l*h+l*b+b*h) 
 print("Final answer is:",Total) 
 ------------------------------------------------------------------------------------------------------
-2) Coverting km into miles.
+#2) Coverting km into miles.
       # 1 km = 0.621371
-ans:
+#ans:
+print("Kilometer into miles")
+kilometer = float(input("Enter the value in kilometer:"))
+miles = kilometer * o.621371
+print("Final value is:",miles)
