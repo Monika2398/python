@@ -1,0 +1,76 @@
+# check if a statement has passed or failed,by takingmarks in 3 subjects.
+ # lets take mark of subjects(maths,physics,chemistry)marks are between 0-100 and passing marks should be above 45:
+ #sol:
+m = int(input("Enter value is maths:"))
+p = int(input("Enter value is physics:"))
+c = int(input("Enter value is chemistry:"))
+if (m>=45 and p>=45 and c>=45):
+       print("passed")
+else:
+       print("failed")
+# check for Age eligibility for casting a vote:
+age = int(input("enter age:"))
+if age >= 18:
+   print("Eligibility")
+else:   
+   print("Not Eligibility")
+#check if a number is odd or even
+ # when we divide it by 2 the remainder must be zero then it is said as even:
+num = int(input("Enter the number:"))
+if (num % 2) == 0:
+   print("number is even")
+else:
+   print("number is odd")
+amount = int(input("Enter amount:"))
+#calculate discounted amount , amount<=1000---10%,1000<amount<=5000---20%,5000<amount<=10000---30%,10000<amount---50%:
+if amount<=1000:
+    discount = amount * 10/100
+elif 1000>amount<=5000:
+    discount = amount * 20/100
+elif 5000>amount<=10000:
+    discount = amount * 30/100
+else :
+   discount = amount * 50/100
+print(discount)
+#check whether year is the leap year or not:
+year= int(input("enter the year:"))
+if (year % 4 )== 0:
+    print("leap year")
+else:
+    print("It is not leap year") 
+# take a day number and display day name, take any number and give it a day name. its like switch case in other languages:
+day_week = int(input("enter the number:")) 
+if day_week == 1:
+    print("Sunday")
+elif day_week == 2:
+    print("Monday") 
+elif day_week == 3:
+    print("Tuesday")
+elif day_week == 4:
+    print("Wednesday") 
+elif day_week == 5:
+    print("Thursday")
+elif day_week == 6:
+    print("Friday")
+elif day_week == 7:
+    print("Saturday")
+else:
+    print("no week days")
+# find difference between two numbers. if 5-15 = -10 we don't want in negative one we want to know only differences:
+print("enter two numbers:")
+a = int(input("Enter 1st number:"))
+b = int(input("Enter 2nd number:"))
+if a-b>0:
+    print(a-b)
+else:
+    print(b-a) 
+# find sum of given numbers as input 
+# you have to ask number of number by taking user input and find the sum of that inputs.And we have to count so we use counter for it:
+num_number = int(input("enter the number of numbers:"))
+sum_number = 0
+count = 0
+while count < num_number:
+    num = float(input("enter the number:")) 
+    sum_number = sum_number + num   
+    count = count + 1
+print("sum of",count,"the number is",sum_number)
