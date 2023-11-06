@@ -1,0 +1,169 @@
+#list
+g1 = [1,2,3,4,4,6]
+print(g1)
+g2 = list ((1,2,3,4,5))
+print(g2)
+g3 = ("sandy","priyanka","pavi")
+print(g3)
+print(g3[1])
+print(g3[2])
+print(g3[-2])
+#slices
+g3 = ("sandy","priyanka","pavi")
+print(g3[:])
+print(g3[0:3])
+print(g3[::2])
+#concatination
+list1 = ["vignesh","nagesh","ganesh","suresh","raj"]
+list2 = [1,2,3,4,5]
+list3 = list1 + list2
+print(list3)
+#extend
+list1 = ["vignesh","nagesh","ganesh","suresh","raj"]
+list2 = [1,2,3,4,5]
+print(list1.extend(list2))
+list4 = list2*3
+print(list4)
+#in and not in 
+lista = [1,2,3,4,5]
+print(2 in lista)
+print(4 not in lista)
+#for loop and range
+lista = [1,2,3,4,5]
+for i in lista:
+    print(i)
+for i in range(len(lista)):
+    print(lista[i])
+# list append
+lista = [1,2,3,4,5]
+appendlist = []
+for i in lista:
+    appendlist.append(i)
+print(appendlist)
+#list extend
+lista = [10,20,30]
+lista.extend([40,50,60])
+print(lista)
+#list insert
+lista.insert(0,0)
+print(lista)
+#list of data delete methods
+l = [1,2,3,4,5,6,7,8]
+l.pop()
+print(l)
+del l[4]
+print(l)
+l.remove(3)
+print(l)
+l.clear()
+print(l)
+l1 = [1,2,3,4,5,6,7,8,9]
+print(l1[::-1])
+l1.reverse()
+print(l1.reverse)
+#Problem 1
+list = [0,1,2,3,4,5,6,7,8,9]
+list1 = [10,11,12,13,14,15]
+for i in list1:
+    list.extend([i])
+print(list)
+#Problem 2
+l1 = [2,3,4,5,6,7,8]
+l2 = ""
+for i in l1:
+    l2 = l2 + str(i)
+    result = int(l2)    
+print(result)
+#Problem 3
+l1 = [1,2,3,4,7,8]
+l2 = [3,4,6,8,7,5]
+common = []
+for x in l1:
+    if x in l2:
+        common.append(x)
+print(common)
+#Problem 4
+l1 = ['a','b','c','d','e','a','d','b','e','e','f']
+l2 = []
+for x in l1:
+    if x not in l2:
+        count = l1.count(x)
+        l2.extend([x,count])
+print(l2)
+#Problem 5
+m1 = [[1,2,3],[4,5,6]]
+m2 = [[1,2,3],[4,5,6]]
+result = [[0,0,0],[0,0,0]]
+for i in range(len(m1)):
+    for j in range(len(m1[0])):
+        result[i][j] = m1[i][j] + m2[i][j]
+for x in result:
+    print(x)
+# tuple
+t1 = ('1','2','3','4')
+print(type(t1))
+t2 = (1,2,3,4,5)
+print(type(t2))
+#packing
+t7 = 10,20,30,40
+print(type(t7))
+#unpacking
+t7 = a,d,f,g,h 
+print(a)
+print(d)
+print(h)
+#lambda programming
+for i in range(10):
+    print(i) 
+t9 = tuple(i for i in range(10))
+print(t9)
+print(type(t9))
+a1 = (0,1,2,3,4,5,6,7,8,9)
+for i in a1:
+    print(i)
+print(a1[0])
+print(a1[-1])
+print(a1[:])
+print(a1[3:])
+print(a1[3::2])
+a2 = (1,2,3,4)
+a3 = a1 + a2 
+print(a3)
+dic = {
+    "key" : "values"
+      }
+dic1 = {1 : "sandhiya",
+        2 : "pavithra",
+        3 : "ragavi"
+       }
+print(dic1[2])
+#only keys
+print(dic1.keys())
+for i indic1.key():
+    print(i)
+#values only
+print(dic1.values())
+for i in dic1.values():
+    print(i)
+# keys and values
+for i in dic1.keys():
+    print(i,dic1[i])
+# items
+print(dic1.items())
+for i,j in dic1.items():
+    print(i,j)
+#Problem 1
+dic = {"Sandy": "10/4/2000",
+       "Tamil" : "3/6/2000",
+       "Ragavi" : "30/2/2000",
+       "Bharathi" : "26/12/2000",
+       "Maha" : "23/11/2000"
+       }
+user_name = input("Enter the name:")
+if user_name in dic:
+    date_of_birth = dic[user_name]
+    print(f"The date of birth of {user_name} is {date_of_birth}") 
+else:
+    print(f"{user_name} is not in dictionary")
+
+
