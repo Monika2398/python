@@ -19,3 +19,20 @@ print("Kilometer into miles")
 kilometer = float(input("Enter the value in kilometer:"))
 miles = kilometer * o.621371
 print("Final value is:",miles)
+
+password = input("enter the password:")
+password1 = input("enter the password:")
+if password==password1:
+    print("password matches") 
+else:
+    if password.casefold()==password1.casefold():
+        print("case problem")
+    else:
+        print("password mismatch")
+cardno = input("enter the card number:")
+if len(cardno) >= 4:
+    last_number = cardno[-4:] 
+    number= '*' * (len(cardno) - 4) + (last_number)
+    print("fromated the number", number)
+else:
+    print("invalid number")
