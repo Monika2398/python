@@ -108,10 +108,6 @@ print(type(t2))
 t7 = 10,20,30,40
 print(type(t7))
 #unpacking
-t7 = a,d,f,g,h 
-print(a)
-print(d)
-print(h)
 #lambda programming
 for i in range(10):
     print(i) 
@@ -139,7 +135,7 @@ dic1 = {1 : "sandhiya",
 print(dic1[2])
 #only keys
 print(dic1.keys())
-for i indic1.key():
+for i in dic1.key():
     print(i)
 #values only
 print(dic1.values())
