@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            /* background-position: left center; */
+            background-size: 100%;
+            background-attachment:fixed;
+            /* background-repeat: repeat-x;*/
+            background-repeat: no-repeat; 
+            /*background-color: #958f8f;   */
+            /* RRGGBB*/
+            /*aef - rgb or rgb%*/
+            /* background:  url( ) 100% fixed repeat-x; */
+            fallback:  background-color : green;
+        }
+        p{  margin: 5pt;
+            float:left;
+            width: 18%;
+            background-color: rgb(255, 255, 255); /* rgb(0-255, 0-255,0-255)*/
+            padding: 10pt;
+            height: 400px;
+            border-radius: 10pt;
+            background-image: url(OIP\ \(1\).jpeg) ;
+            background-size:  100% ;
+            background-attachment: fixed; 
+
+        }
+        #firstPara{
+            text-align: start; 
+            color:hsla(0, 100%, 52%, 0.5);
+            /*hue - color - 0-255 [0- red, 120-green , 240- blur] */
+            /* staturation - amt of gery added to the color 0%[black]-100%[white] */
+            /* lightness -  amt of light added to the color 0%[black]-100%[white] */
+            /* a - alpha - transparency */
+
+        }
+        #SecPara{
+            color: green;
+            text-align: end;
+        }
+        #ThirdPara{
+            color: blue;
+            text-align: justify;
+        }
+        #lastPara{
+            text-align: center;
+        }
+
+        .pText{
+            font-style: italic;
+            font-weight: 600;
+            font-variant:normal;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            /* word-spacing: 4px; */
+            text-indent: 20%;
+        }
+        h1{
+            color:green;
+            text-align: center;
+            text-shadow: 5px 5px 25pt black, 1pt 1pt 5pt rgb(255, 0, 0);
+/* text-shadow : verticalline haorizontalline blur color
+*/
+        }
+    </style>
+        <h1>This is my heading</h1>
+    <P id="firstPara" class="pText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae velit, id nostrum que, dolores a minus est cum commodi dolor deleniti quas tempora incidunt iste, perferendis excepturi provident consequuntur!</P>
+
+    <p id="SecPara" class="pText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In dolorem sapiente quas quae nisi dolore omnis nostrum, veritatis at? Iure ab itaque dolore aperiam soluta aspernatur reiciendis odit quod ex.</p>
+
+    <p id="ThirdPara" class="pText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, expedita. Quisquam deleniti deserunt minus facere reprehenderit cupiditate harum odit sequi molestias, unde soluta officia enim ipsam maiores at id minima?. </p>
+
+    <p id="lastPara" class="pText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rem cupiditate cumque nihil repellat distinctio eos eveniet animi, debitis temporibus, dicta consectetur nisi neque? Praesentium repudiandae magni autem asperiores totam!</p>
+
+
+</body>
+</html>
