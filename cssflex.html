@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text Direction</title>
+    <style>
+        #left[dir:left]{
+            margin:50px;
+        }
+        #left{
+            text-indent: 20pt;
+            word-spacing: 5pt;
+        }
+        #two{
+            padding: 20px;
+            letter-spacing: 2pt;
+        }
+        h1{
+            text-shadow: 2pt 5pt 5pt  red;
+            text-transform:uppercase;
+        }
+        .container{
+            border:1px ridge rgb(0, 255, 26);
+            display: flex; 
+            /*flex-direction: column;*/
+           /* justify-content: center;*/
+           /*justify-content: space-between;*/
+           /*justify-content: space-evenly;*/
+           justify-content: baseline;
+            padding: 2px;
+            flex-wrap: nowrap;
+        }
+        .item{
+            border:1px ridge rgb(255, 0, 0);
+            padding: 2px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque quam, incidunt et vero sint sapiente commodi ex illum tenetur dolorem omnis mollitia sequi veniam accusamus! Rem iste optio commodi?</p>
+    
+    <P id="left" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis totam corrupti veritatis excepturi ullam itaque natus, vero aperiam, nesciunt ducimus commodi alias vel atque aliquam? Dolore voluptatem inventore reiciendis nostrum!</P>
+
+    <p id="two" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cumque quam, incidunt et vero sint sapiente commodi ex illum tenetur dolorem omnis mollitia sequi veniam accusamus! Rem iste optio commodi?</p>
+    <h1> this text has a text-shadow</h1>
+
+    <div class="container">
+        <div class="item i1">item 1</div>
+        <div class="item i2">item 2</div>
+        <div class="item i3">item 3</div>
+        <div class="item i4">item 4</div>
+        <div class="item i1">item 1</div>
+        <div class="item i2">item 2</div>
+        <div class="item i3">item 3</div>
+        <div class="item i4">item 4</div>
+        <div class="item i1">item 1</div>
+        <div class="item i2">item 2</div>
+        <div class="item i3">item 3</div>
+        <div class="item i4">item 4</div>
+    </div>
+
+</body>
+</html>
