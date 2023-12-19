@@ -1,0 +1,49 @@
+'''#function
+def wish():
+    print("Hello Good Morning")
+    print("Hello Good Morning")
+    print("Hello Good Morning")
+    print("hello")
+#calling statement
+wish()
+wish()
+wish()
+wish()'''
+#programs
+#program1
+def add_number(a,b):
+    d = a + b
+    if d == 3:
+      return "sum equal to 3"
+    else:
+       return d   
+d = add_number(1,2)
+print(d)
+# program2
+def sub_number(a,b):
+   d = a - b
+   if d < 0:
+      return "Result is negative"
+   else:
+      return d
+d = sub_number(2,6)
+print(d)
+#program3
+def mul_number(a,b):
+   d = a * b
+   if d % 2 == 0:
+      return "result is even"
+   else:
+      return d
+d = mul_number(14,6)
+print(d)
+#program4
+def div_number(a,b):
+   if b!=0:
+      d = a/b
+      return d
+   else:
+      return "cannot divide by zero"
+d = div_number(15,7)
+print(d)
+      
