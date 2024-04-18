@@ -1,0 +1,40 @@
+import subprocess
+import psutil
+import webbrowser
+import time
+
+def is_laptop_charging():
+    # Function to check if the laptop is charging
+    battery = psutil.sensors_battery()
+    return battery.power_plugged
+
+def is_laptop_on():
+    # Function to check if the laptop is on
+    return psutil.sensors_battery().percent > 0
+
+def start_laptop():
+    # Function to start the laptop
+    subprocess.run(["start", "your_laptop_startup_command_here"])
+
+def open_youtube():
+    # Function to open YouTube in the default web browser
+    webbrowser.open("https://www.youtube.com")
+
+# Check if laptop is off
+if not is_laptop_on():
+    if is_laptop_charging():
+        # Turn on the laptop if it's off and charging
+        start_laptop()
+    else:
+        # If not charging, consider repair or take appropriate action
+        print("Laptop not charging. Consider repair or take appropriate action.")
+
+# Wait for the system to start (you might need to adjust the duration)
+time.sleep(60)
+
+# Check if laptop is on after starting
+if is_laptop_on():
+    # Execute the process condition
+    open_youtube()
+else:
+    print("Laptop is still not on. Check for issues.")

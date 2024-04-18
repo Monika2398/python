@@ -21,8 +21,8 @@ if (num % 2) == 0:
    print("number is even")
 else:
    print("number is odd")
-amount = int(input("Enter amount:"))
 #calculate discounted amount , amount<=1000---10%,1000<amount<=5000---20%,5000<amount<=10000---30%,10000<amount---50%:
+amount = int(input("Enter amount:"))
 if amount<=1000:
     discount = amount * 10/100
 elif 1000>amount<=5000:

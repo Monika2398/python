@@ -1,0 +1,54 @@
+<header>
+            <h1>Welcome to Pen Company</h1>
+            <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="index.html">Order Now</a></li>
+              </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <table width="100%" cellpadding="10px">
+                   <h2>Order Form</h2>    
+                   <from id="OrderForm">
+                        <tr>
+                            <td><label for="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><lable for="phone">Phone Number:</lable></td>
+                            <td><input type="number" id="phone" name="phone" required></td>
+                        </tr>
+                        <tr>
+                            <td><lable for="Product">Product:</lable></td>
+                            <td><select id="product" name="product" required>
+                                  <option value="products">select</option>
+                                  <option value="Fountain Pen">Fountain Pen</option>
+                                  <option value="Ballpoint Pen">Ballpoint Pen</option>
+                                  <option value="Parker Pen">Parker Pen</option>
+                            </td></select><br><br>
+                        </tr>
+                        <tr>
+                            <td><lable for="quantity">Quantity:</lable></td>
+                            <td><input type="number" id="quantity" name="quantity" min="1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message:</label></td>
+                            <td><textarea type="" id="" name="" cols="50" rows="5" placeholder="Write your message here...."></textarea></td>
+                        </tr>    
+                    </from>
+                </table>  
+           </section>
+        </main>
+        <footer>
+          <p>&copy;Pen Company all rights reserved</p>
+        </footer>
+    </body>
+</html>
